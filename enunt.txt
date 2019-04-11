@@ -1,0 +1,21 @@
+Sa se proiecteze si sa se implementeze un modul pentru matrici patrate de siruri de caractere.
+Exemplu de matrice patrata bidimensionala :
+"aaa" "bb"
+"c" "ddd"
+Modulul trebuie sa permita rezolvarea urmatoarelor probleme:
+- Afisarea matricii;
+- Determinarea dimensiunii matricii;
+- Adunarea a doua matrici (se concateneaza sirurile din aceeasi pozitie din cele doua
+matrici);
+- Permiterea accesului la un sir prin pozitia lui in matrice;
+- Cautarea unui sir intr-o matrice (se poate considera prima sau ultima aparitie a
+sirului in matrice, eventual toate aparitiile);
+- Inmultirea a doua matrici. Adunarea a doua siruri de caractere reprezinta
+concatenerea acestora ("aaa" + "xyz" = "aaaxyz"), iar produsul a doua siruri de
+caractere se defineste astfel:
+- "ax" * "bb" = "axaxaxaxaxaxaxaxaxaxax": se concateneaza primul sir cu el
+insusi de un numar de ori rezultat prin transformarea fiecarui caracter "c" prin
+numarul rezultat prin scaderea "c" – "a" (in cazul anterior, "b" – "a" = 98 – 97 =
+1, iar sirul "bb" se transforma in numarul 11)
+- Compararea lexicografica a matricilor (elementele matricii se compara pe linii, iar in
+cadrul liniilor element cu element).
